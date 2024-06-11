@@ -41,6 +41,17 @@ h6 {
   text-wrap: balance;
 }
 
+h2 {
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 4rem;
+}
+
+.white {
+  color: #ffffff;
+}
+
 img,
 svg {
   height: auto;
@@ -100,5 +111,36 @@ header {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
+  }
+}
+
+.sponsors {
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 128, 29);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 128, 29, 1) 0%,
+    rgba(254, 39, 86, 1) 100%
+  );
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logos {
+    img {
+      margin: 0 1.5rem;
+    }
+
+    .ntt-data {
+      width: auto;
+      height: 60px;
+    }
+
+    .github {
+      width: auto;
+      height: 120px;
+    }
   }
 }
