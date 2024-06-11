@@ -158,3 +158,37 @@ header {
     }
   }
 }
+
+.speakers {
+  h2 {
+    color: #7f52ff;
+  }
+}
+
+.agenda {
+  background-color: #7f52ff;
+}
+
+.organizers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro {
+  background: rgb(252, 128, 29);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 128, 29, 1) 0%,
+    rgba(254, 39, 86, 1) 100%
+  );
+
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 6rem;
+}
