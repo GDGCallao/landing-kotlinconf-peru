@@ -13,7 +13,7 @@
 
 body {
   min-height: 100dvh;
-  background-color: rgb(209, 59, 9);
+  background-color: #ffffff;
   font-family: "GoogleSans";
 }
 
@@ -76,11 +76,29 @@ header {
       margin: 0;
 
       li {
+        margin: 0 2rem 0 0;
         a {
           text-decoration: none;
           color: #000000;
         }
       }
     }
+  }
+}
+
+.hero {
+  padding: 6rem 0;
+  background: rgb(127, 82, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(127, 82, 255, 1) 0%,
+    rgba(251, 126, 33, 1) 99%,
+    rgba(254, 49, 80, 1) 100%
+  );
+
+  .hero_img {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
   }
 }
