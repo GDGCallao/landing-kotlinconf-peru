@@ -46,6 +46,10 @@ h2 {
   font-weight: 700;
   text-align: center;
   margin: 0 0 4rem;
+
+  @media (max-width: 991.98px) {
+    font-size: 4.2rem;
+  }
 }
 
 .white {
