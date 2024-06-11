@@ -11,10 +11,17 @@
 
 body {
   min-height: 100dvh;
-  background-color: rgb(212, 79, 35);
+  background-color: rgb(209, 59, 9) !important;
 }
 
-input, button, textarea, select {
+html {
+  font-size: 62.5%;
+}
+
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -22,11 +29,55 @@ p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
-img, svg {
+img,
+svg {
   height: auto;
-   max-width: 100%;
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 6.5rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+
+  img {
+    width: 271px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767.98px) {
+      justify-content: center;
+    }
+
+    ul {
+      list-style: none;
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+    }
+  }
 }
