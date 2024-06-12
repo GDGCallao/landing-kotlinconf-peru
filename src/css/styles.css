@@ -557,6 +557,7 @@ footer {
     justify-content: center;
     text-align: center;
     transition: top 1s ease;
+    padding: 0 0 3rem 0;
   }
 }
 .showMenu {
