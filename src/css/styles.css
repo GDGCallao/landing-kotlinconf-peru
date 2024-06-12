@@ -159,11 +159,14 @@ header {
         }
 
         a.active {
-          font-weight: bold;
-          border-bottom: 4px solid #7f52ff;
-          padding: 0 0 1rem;
         }
       }
+    }
+
+    .nav_list li a.active {
+      font-weight: bold;
+      border-bottom: 4px solid #7f52ff;
+      padding: 0 0 1rem;
     }
 
     .burgerMenu {
