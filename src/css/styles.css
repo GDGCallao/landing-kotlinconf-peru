@@ -45,7 +45,7 @@ h2 {
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
-  margin: 0 0 4rem;
+  margin: 0 0 5rem;
 
   @media (max-width: 991.98px) {
     font-size: 4.2rem;
@@ -72,6 +72,9 @@ section {
 
 .sm-text {
   font-size: 2.5rem;
+  @media (max-width: 767.98px) {
+    font-size: 2rem;
+  }
 }
 
 .btn {
@@ -99,6 +102,7 @@ section {
 }
 
 header {
+  position: fixed;
   width: 100%;
   height: 6.5rem;
   background-color: #ffffff;
@@ -109,6 +113,14 @@ header {
 
   img {
     width: 271px;
+
+    @media (max-width: 991.98px) {
+      width: 255px;
+    }
+
+    @media (max-width: 767.98px) {
+      width: 230px;
+    }
   }
 
   nav {
@@ -130,8 +142,15 @@ header {
       li {
         margin: 0 2rem 0 0;
 
+        @media (max-width: 767.98px) {
+          margin: 2rem 0;
+        }
+
         &:last-child {
           margin: 0;
+          @media (max-width: 767.98px) {
+            margin: 2rem 0;
+          }
         }
 
         a {
@@ -145,6 +164,55 @@ header {
           padding: 0 0 1rem;
         }
       }
+    }
+
+    .burgerMenu {
+      display: none;
+      justify-content: flex-end;
+      cursor: pointer;
+      width: 40px;
+      height: 43px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+
+      @media (max-width: 767.98px) {
+        display: block;
+      }
+    }
+
+    .line1 {
+      width: 22px;
+      height: 2.2px;
+      border-radius: 1px;
+      background-color: #000000;
+      margin-bottom: 5px;
+      margin-top: 12px;
+      margin-left: 9px;
+      margin-right: 9px;
+    }
+
+    .line2,
+    .line3 {
+      width: 22px;
+      height: 2.2px;
+      border-radius: 1px;
+      background-color: #000000;
+      margin: 6px 9px;
+      transition: 0.4s;
+    }
+
+    .change .line1 {
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+      transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .line2 {
+      opacity: 0;
+    }
+
+    .change .line3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -6px);
+      transform: rotate(45deg) translate(-6px, -6px);
     }
   }
 }
@@ -292,4 +360,39 @@ footer {
 
 #shadow-host-companion {
   display: none;
+}
+
+/* Burger menu */
+
+.nav_list .showMenu {
+  display: flex;
+  align-items: center;
+}
+
+.nav_list {
+  @media (max-width: 767.98px) {
+    position: absolute;
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: top 1s ease;
+  }
+}
+.showMenu {
+  display: flex;
+}
+
+.openList {
+  display: flex;
+}
+
+.burgerMenu .showMenu {
+  justify-content: flex-end;
 }
