@@ -370,7 +370,12 @@ header {
 }
 
 .agenda {
-  background-color: #7f52ff;
+  background: rgb(127, 82, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(127, 82, 255, 1) 0%,
+    rgba(31, 19, 66, 1) 100%
+  );
 }
 
 .organizers {
