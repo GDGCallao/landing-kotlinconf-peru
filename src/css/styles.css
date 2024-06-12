@@ -384,6 +384,11 @@ footer {
   display: flex;
   align-items: center;
 
+  @media (max-width: 767.98px) {
+    align-items: center;
+    height: 40rem;
+  }
+
   .social_media {
     display: flex;
     justify-content: flex-start;
@@ -400,11 +405,18 @@ footer {
   }
 
   .info {
-    display: inline-flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 50px;
     margin: 4rem 0 0;
+
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
 
     img {
       width: 150px;
@@ -417,16 +429,34 @@ footer {
       margin: 0;
       padding: 0 0 0 5rem;
 
+      @media (max-width: 991.98px) {
+        padding: 0 0 0 2rem;
+      }
+
+      @media (max-width: 767.98px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+
       li {
         margin: 0;
         padding: 0;
         height: auto;
+
+        @media (max-width: 767.98px) {
+          margin: 2rem 0 0;
+        }
       }
 
       a {
         text-decoration: none;
         color: #ffffff;
         margin: 0 3rem 0 0;
+
+        @media (max-width: 991.98px) {
+          margin: 0 1rem 0 0;
+        }
 
         &:hover {
           text-decoration: underline;
