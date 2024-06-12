@@ -352,6 +352,7 @@ header {
     }
 
     .github {
+      display: none;
       width: auto;
       height: 120px;
 
