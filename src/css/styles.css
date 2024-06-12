@@ -339,6 +339,24 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .logos {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      @media (max-width: 767.98px) {
+        width: 200px;
+        height: 120px;
+      }
+    }
+  }
 }
 
 .registro {
