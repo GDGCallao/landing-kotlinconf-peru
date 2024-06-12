@@ -376,6 +376,42 @@ header {
     rgba(127, 82, 255, 1) 0%,
     rgba(31, 19, 66, 1) 100%
   );
+
+  .box {
+    font-size: 1.8rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0 4rem 0;
+
+    .schedule {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 2.5rem 0 2.5rem 0;
+      border-top: 1px solid #966ef1;
+
+      p {
+        margin: 0;
+      }
+
+      .info {
+        text-align: left;
+      }
+
+      .time {
+        margin: 0 3rem 0 0;
+        width: 150px;
+      }
+
+      .detail {
+        font-weight: 300;
+        color: #fafafaa8;
+      }
+    }
+  }
 }
 
 .organizers {
