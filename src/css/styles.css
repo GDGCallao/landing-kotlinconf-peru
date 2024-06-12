@@ -50,6 +50,10 @@ h2 {
   @media (max-width: 991.98px) {
     font-size: 4.2rem;
   }
+
+  @media (max-width: 575.98px) {
+    font-size: 3.5rem;
+  }
 }
 
 .white {
@@ -211,8 +215,29 @@ header {
   align-items: center;
 
   .logos {
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     img {
-      margin: 0 1.5rem;
+      margin: 0 3.5rem;
+
+      @media (max-width: 767.98px) {
+        margin: 2.5rem 0;
+      }
+    }
+
+    .jetbrains {
+      @media (max-width: 767.98px) {
+        width: 150px;
+      }
+
+      @media (max-width: 575.98px) {
+        width: 130px;
+      }
     }
 
     .ntt-data {
@@ -223,6 +248,10 @@ header {
     .github {
       width: auto;
       height: 120px;
+
+      @media (max-width: 575.98px) {
+        height: 110px;
+      }
     }
   }
 }
